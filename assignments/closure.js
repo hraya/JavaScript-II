@@ -1,6 +1,19 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
+function theState() {
+  console.log(`I am in the State`);
+  function city() {
+    console.log(`I am in the city`);
+    
+    function suburb() {
+      console.log(`I am in the suburb`);
+    }
+    suburb();
+  }
+  city();
+}
 
+theState()
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
